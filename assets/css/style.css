@@ -40,6 +40,9 @@ html{
 .mt-16{
     margin-top:16px;
 }
+.mt-32{
+    margin-top:32px;
+}
 .btn:hover{
     background-color:#ccc;
     color:#000;
@@ -104,6 +107,28 @@ html{
 #nav .nav-arrow-down {
     font-size: 14px;
 }
+#header .mobile_menu-icon{
+    float:right;
+    padding:0 23px;
+}
+#header .mobile_menu-icon:hover{
+    background-color:#ccc;
+    color:black;
+}
+#header .mobile_menu-icon:hover .menu-icon{
+    color:black;
+}
+#header .menu-icon {
+    line-height: 46px;
+    color: #fff;
+}
+/* mobile menu and button search */
+.mobile_menu-icon {
+    position:absolute;
+    top:0;
+    right:0;
+    display:none;
+}
 #header .search-btn {
     padding: 0 23px;
     float: right;
@@ -121,7 +146,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top:50%;
-    background: url(./assets/image/slider/slider1.jpg)  top center / cover no-repeat;
+    background: url(/assets/image/slider/slider1.jpg)  top center / cover no-repeat;
 }    
 #slider .text-content{
     color:#ccc;
@@ -142,9 +167,12 @@ html{
 
 #content .content-selection{
     width:800px;
+    max-width: 100%;
+    padding:64px 0 112px;
     margin-left:auto;
     margin-right:auto;
-    padding:64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .selection-heading {
     font-size:30px;
@@ -162,7 +190,7 @@ html{
 #content .about-text{
     font-size: 15px;
     text-align: justify;
-    padding-bottom: 45px;
+    padding-bottom: 29px;
 }
 
 #content .member-name{
@@ -170,7 +198,7 @@ html{
     padding-bottom: 15px;
 }
 #content .member-img{
-    width:154px;
+    width:60%;
     border-radius:4px;
 }
 /* toursection */
@@ -223,7 +251,7 @@ html{
 .place-body{
     background-color:#fff;
     font-size:15px;
-    padding-left:16px;
+    padding:16px;
 }
 .place-heading{
     font-size: 15px;
@@ -245,6 +273,7 @@ html{
     padding: 10px 16px;
     display: inline-block;
     margin-bottom: 15px;
+    text-align:center;
 }
 /* modal */
 .modal{
@@ -300,6 +329,7 @@ html{
     margin-bottom:24px;
     border:1px solid #ccc;
 }
+
 #buy-tickets{
     background-color: #009688;
     color:#fff;
